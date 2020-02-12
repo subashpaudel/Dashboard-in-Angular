@@ -1,0 +1,289 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+.example-container {
+  height: 500px;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+
+}
+.example-sidenav-content {
+  display: flex;
+	height: 100%;
+	
+  align-items: center;
+  justify-content: center;
+}
+.example-sidenav {
+	 user-select: none;
+	 
+}
+
+.full-width {
+	width: 100%;
+	margin-right: 50px;
+}
+.menu-button {
+  transition: 300ms ease-in-out;
+  transform: rotate(0deg);
+}
+.menu-button.rotated {
+  transform: rotate(180deg);
+}
+.submenu {
+  overflow-y: hidden;
+  transition: transform 300ms ease;
+  transform: scaleY(0);
+  transform-origin: top;
+	padding-left: 30px;;
+	display:none;
+	
+}
+.submenu1 {
+  overflow-y: hidden;
+  transition: transform 300ms ease;
+  transform: scaleY(0);
+  transform-origin: top;
+	padding-left: 30px;
+	display:none;
+}
+.submenu.expanded {
+	transform: scaleY(1);
+	
+	
+}
+.submenu1.expanded {
+  transform: scaleY(1);
+}
+.submenu2 {
+  overflow-y: hidden;
+  transition: transform 300ms ease;
+  transform: scaleY(0);
+  transform-origin: top;
+	padding-left: 30px;
+	display:none;
+}
+.submenu2.expanded {
+  transform: scaleY(1);
+}
+.submenu3 {
+  overflow-y: hidden;
+  transition: transform 300ms ease;
+  transform: scaleY(0);
+  transform-origin: top;
+	padding-left: 30px;
+	display:none;
+}
+.submenu3.expanded {
+  transform: scaleY(1);
+}
+.submenu4 {
+  overflow-y: hidden;
+  transition: transform 300ms ease;
+  transform: scaleY(0);
+  transform-origin: top;
+	padding-left: 30px;
+	display:none;
+}
+.submenu4.expanded {
+  transform: scaleY(1);
+}
+.submenu5 {
+  overflow-y: hidden;
+  transition: transform 300ms ease;
+  transform: scaleY(0);
+  transform-origin: top;
+	padding-left: 30px;
+	display:none;
+}
+.submenu5.expanded {
+  transform: scaleY(1);
+}
+
+
+
+svg{
+  width: 2em;
+	height: 2em;
+	
+  
+}
+.icn{
+	width: 1.5em;
+    height: 1.5em;
+    
+
+}
+
+.example-card1{
+    background: #0088cc;
+}
+.example-card1:hover{
+	
+	cursor:pointer;
+	border-bottom: 5px solid #0088cc;
+	border-right: 4px solid #0088cc;
+	border-top: 0px solid transparent;
+  border-left: 0px solid transparent;
+}
+.card{
+	
+	border-radius:10px;
+	color:white;
+	text-align:left;
+	font-weight:bold;
+	padding:10px;
+	padding-bottom:5px;
+	font-family: 'Roboto', sans-serif;
+  max-height:110px;
+}
+.card:active{
+	border: 0px solid;
+	box-shadow: 0px 0px gray;
+	transform: translateY(4px);
+}
+
+.card_title{
+	height:50%
+}
+.example-card2{
+    background: #800000;
+}
+.example-card2:hover{
+	
+	cursor:pointer;
+  
+	border-bottom: 5px solid #800000;
+	border-right: 4px solid #800000;
+	border-top: 0px solid transparent;
+	border-left: 0px solid transparent;
+}
+.example-card3{
+    background: #ff3300;
+}
+.example-card3:hover{
+	
+	cursor:pointer;
+  
+  border-bottom: 5px solid #ff3300;
+	border-right: 4px solid #ff3300;
+	border-top: 0px solid transparent;
+	border-left: 0px solid transparent;
+}
+.example-card4{
+    background: #ffaa00;
+}
+.example-card5{
+    background: #3399ff;
+}
+.example-card6{
+    background: #00b300;
+}
+.example-card4:hover{
+	
+	cursor:pointer;
+  
+  border-bottom: 5px solid #ffaa00;
+	border-right: 4px solid #ffaa00;
+	border-top: 0px solid transparent;
+	border-left: 0px solid transparent;
+}
+#chart1Btn1{
+	border: 2px solid white;
+	border-radius:10px;
+	color:white;
+}
+.chart1Btn1{
+  background:#0088cc;
+}
+.chart1Btn2{
+	background:tomato;
+	
+}
+
+#chart1Btn2{
+	border: 2px solid white;
+	border-radius:10px;
+	color:white;
+}
+.chart1Btn3{
+	background:#00b300;
+	
+}
+#chart1Btn3{
+	border: 2px solid white;
+	border-radius:10px;
+	color:white;
+}
+.example-card5{
+	text-align:center;
+	
+	
+	border-radius:10px;
+	font-weight:bold;
+	padding:10px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.example-card5:hover{
+	
+	cursor:pointer;
+  
+  border-bottom: 5px solid#3399ff;
+	border-right: 4px solid#3399ff;
+	border-top: 0px solid transparent;
+	border-left: 0px solid transparent;
+}
+.example-card6{
+	text-align:center;
+	
+	
+	border-radius:10px;
+	font-weight:bold;
+	padding:10px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.example-card6:hover{
+	
+	cursor:pointer;
+  
+  border-bottom: 5px solid #00b300;
+	border-right: 4px solid #00b300;
+	border-top: 0px solid transparent;
+	border-left: 0px solid transparent;
+		
+}
+
+
+.icon1{
+	fill: white;
+	position: relative;
+}
+
+.example-container{
+	background-color:#e9edf7;
+
+}
+
+.image{
+	width:4em;
+	height: 4em;
+}
+.mat-icon {
+	font-size: 30px;
+	}
+	font{
+		color: #274b6a;
+	}
+	
+
+
+
+
+	html{
+	
+		font-family: 'Roboto', sans-serif;
+	}
+	
+
+
+

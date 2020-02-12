@@ -1,0 +1,265 @@
+<mat-toolbar  class="example-toolbar" >
+        <mat-toolbar-row>
+            
+                <font size="6"> Virtusa ~ </font> 
+                <font size="5" style="margin-bottom:-10px;">STAAS </font>
+            
+            <button mat-icon-button  style="margin-left:920px;" tooltipClass="my-custom-class" ><mat-icon ngbPopover=" Admin " placement="bottom"   class="ic1" [openDelay]="300" [closeDelay]="500" triggers="mouseenter:mouseleave"  popoverTitle="Profile" >account_circle</mat-icon></button>
+            
+            
+    
+           
+            <button mat-icon-button style="margin-left:10px;"><mat-icon >power_settings_new</mat-icon></button>
+            
+            
+            
+    
+        </mat-toolbar-row>
+            
+    
+    
+    
+    
+    </mat-toolbar>
+    
+    
+    <mat-sidenav-container class="example-container"  >
+       <mat-sidenav #sidenav class="example-sidenav" mode="side" opened="true" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
+           <mat-nav-list>
+       <br>
+                   <mat-list-item class="home">
+                        <svg role="img"  class="icn"   style="margin-right:15px;" ><use xlink:href="/assets/icons/icons.svg#icon-home"></use></svg>
+                           <span class="full-width" *ngIf="isExpanded || isShowing">Dashboard</span>
+                           
+                           </mat-list-item>
+                           <mat-list-item class="home">
+                            <svg role="img"  class="icn"   style="margin-right:15px;" ><use xlink:href="/assets/icons/icons.svg#icon-bulb"></use></svg>
+                               <span class="full-width" *ngIf="isExpanded || isShowing">Create Project</span>
+                               
+                               </mat-list-item>
+                               <mat-list-item class="API">
+                                <svg role="img"  class="icn"   style="margin-right:15px;" ><use xlink:href="/assets/icons/icons.svg#icon-checklist"></use></svg>
+                                   <span class="full-width" *ngIf="isExpanded || isShowing">API Scan</span>
+                                   
+                                   </mat-list-item>
+    
+              
+                                   <mat-list-item class="sast">
+                                    <svg role="img"  class="icn"   style="margin-right:15px;" ><use xlink:href="/assets/icons/icons.svg#icon-safe"></use></svg>
+                                       <span class="full-width" *ngIf="isExpanded || isShowing">SAST</span>
+                                       
+                                       </mat-list-item>
+                                       <mat-list-item class="dast">
+                                        <svg role="img"  class="icn"   style="margin-right:15px;" ><use xlink:href="/assets/icons/icons.svg#icon-secure"></use></svg>
+                                           <span class="full-width" *ngIf="isExpanded || isShowing">DAST</span>
+                                           
+                                           </mat-list-item>
+                                           <mat-list-item class="network">
+                                            <svg role="img"  class="icn"   style="margin-right:15px;" ><use xlink:href="/assets/icons/icons.svg#icon-technology"></use></svg>
+                                               <span class="full-width" *ngIf="isExpanded || isShowing">Network VA</span>
+                                               
+                                               </mat-list-item>
+    
+    
+               
+                                               <mat-list-item class="mobile">
+                                                <svg role="img"  class="icn"   style="margin-right:15px;" ><use xlink:href="/assets/icons/icons.svg#icon-phone"></use></svg>
+                                                   <span class="full-width" *ngIf="isExpanded || isShowing">Mobile</span>
+                                                   
+                                                   </mat-list-item>
+      
+    
+       
+           </mat-nav-list>
+          
+    
+           <mat-nav-list>
+            <mat-list-item (click)="showSubmenu4 = !showSubmenu4" class="dropdown">
+                    <svg role="img"  class="icn" style="margin-right:15px;" ><use xlink:href="/assets/icons/icons.svg#icon-laptop"></use></svg>
+                
+                <span class="full-width" *ngIf="isExpanded || isShowing" >Reports</span>
+            
+                <mat-icon class="menu-button" [ngClass]="{'rotated' : showSubmenu4}" *ngIf="isExpanded || isShowing">expand_more</mat-icon>
+            </mat-list-item>
+            <div class="submenu3 " [ngClass]="{'expanded' : showSubmenu4}" *ngIf="isShowing || isExpanded">
+                <a mat-list-item href="...">Download</a>
+                
+                
+                
+            </div>
+        </mat-nav-list>
+        <mat-nav-list>
+        </mat-nav-list>
+    
+        <mat-nav-list>
+            <mat-list-item (click)="showSubmenu5 = !showSubmenu5" class="dropdown">
+                    <svg role="" class="icn"  style="margin-right:15px;"><use xlink:href="/assets/icons/icons.svg#icon-plane"></use></svg>
+                
+                <span class="full-width" *ngIf="isExpanded || isShowing">Logout</span>
+            
+                
+            </mat-list-item>
+            
+        </mat-nav-list>
+        <mat-nav-list>
+        </mat-nav-list>
+    
+    </mat-sidenav>
+    <br>
+
+
+    <div class="container"  
+    fxLayout
+    fxLayoutWrap
+     fxLayout.xs="column"
+     fxLayoutAlign="left"
+     fxLayoutGap="1%"
+		 fxLayoutGap.xs="0" >
+		 <mat-card class="example-card1 card" fxFlex="25%">
+			 <div></div>
+				<div class="row card_title">
+				<div class="col-md-1 col-sm-1 col-1"><h5 style="font-size:20px;"></h5></div>
+				<h5 style="font-size:3.5vh;">Total <br>vulnerability</h5>
+				<div class="col-md-1 col-sm-1 col-1"><h5 style="font-size:20px;"></h5></div>
+				<div class="col-md-1 col-sm-1 col-1"><svg role="img" style="float:right;width:2vw;height:4vh;padding-top:0.5vh;margin-right:-28vh;margin-top:-10vh;" class="icon icon1"><use xlink:href="assets/icons/icons.svg#icon-certificate"></use></svg></div>
+				</div>
+				<div class="row">
+						<div class="col-12"><p class="text-center" style="padding-top:15px;font-size:40px;font-size:3.5vh">344</p></div>
+					</div>
+			 
+
+			 
+
+			
+
+			
+			</mat-card>
+			<mat-card class="example-card2 card" fxFlex="25%">
+					<div></div>
+					   <div class="row card_title">
+					   <div class="col-md-1 col-sm-1 col-1"><h5 style="font-size:20px;"></h5></div>
+					   <h5 style="font-size:3.5vh;">Critical</h5>
+					   <div class="col-md-1 col-sm-1 col-1"><h5 style="font-size:20px;"></h5></div>
+					   <div class="col-md-1 col-sm-1 col-1"><svg role="img" style="float:right;width:2vw;height:4vh;padding-top:0.5vh;margin-top:-1vh;margin-right:-7vh;" class="icon icon1"><use xlink:href="assets/icons/icons.svg#icon-technology"></use></svg></div>
+					   </div>
+					   <div class="row">
+							   <div class="col-12"><p class="text-center" style="padding-top:15px;font-size:40px;font-size:3.5vh">36</p></div>
+						   </div>
+						   </mat-card>
+
+						   <mat-card class="example-card3 card" fxFlex="25%">
+								<div></div>
+								   <div class="row card_title">
+								   <div class="col-md-1 col-sm-1 col-1"><h5 style="font-size:20px;"></h5></div>
+								   <h5 style="font-size:3.5vh;">High</h5>
+								   <div class="col-md-1 col-sm-1 col-1"><h5 style="font-size:20px;"></h5></div>
+								   <div class="col-md-1 col-sm-1 col-1"><svg role="img" style="float:right;width:2.5vw;height:5vh;padding-top:0.5vh;margin-right:-10vh;margin-top:-1vh;" class="icon icon1"><use xlink:href="assets/icons/icons.svg#icon-secure"></use></svg></div>
+								   </div>
+								   <div class="row">
+										   <div class="col-12"><p class="text-center" style="padding-top:15px;font-size:40px;font-size:3.5vh">42</p></div>
+									   </div>
+									   </mat-card>
+
+									   <mat-card class="example-card4 card" fxFlex="25%">
+											<div></div>
+											   <div class="row card_title">
+											   <div class="col-md-1 col-sm-1 col-1"><h5 style="font-size:20px;"></h5></div>
+											   <h5 style="font-size:3.5vh;">Medium</h5>
+											   <div class="col-md-1 col-sm-1 col-1"><h5 style="font-size:20px;"></h5></div>
+											   <div class="col-md-1 col-sm-1 col-1"><svg role="img" style="float:right;width:2.5vw;height:5vh;padding-top:0.5vh;margin-right:-5vh;margin-top:-1vh;" class="icon icon1"><use xlink:href="assets/icons/icons.svg#icon-safe"></use></svg></div>
+											   </div>
+											   <div class="row">
+													   <div class="col-12"><p class="text-center" style="padding-top:15px;font-size:40px;font-size:3.5vh">51</p></div>
+												   </div>
+                                                   </mat-card>
+                                                   
+                                                   <mat-card class="example-card5 card" fxFlex="25%">
+                                                        <div></div>
+                                                           <div class="row card_title">
+                                                           <div class="col-md-1 col-sm-1 col-1"><h5 style="font-size:20px;"></h5></div>
+                                                           <h5 style="font-size:3.5vh;">Low</h5>
+                                                           <div class="col-md-1 col-sm-1 col-1"><h5 style="font-size:20px;"></h5></div>
+                                                           <div class="col-md-1 col-sm-1 col-1"><svg role="img" style="float:right;width:2.5vw;height:5vh;padding-top:0.5vh;margin-right:-11vh;margin-top:-1vh;" class="icon icon1"><use xlink:href="assets/icons/icons.svg#icon-people"></use></svg></div>
+                                                           </div>
+                                                           <div class="row">
+                                                                   <div class="col-12"><p class="text-center" style="padding-top:15px;font-size:40px;font-size:3.5vh">200</p></div>
+                                                               </div>
+                                                               </mat-card>
+
+
+                                                               <mat-card class="example-card6 card" fxFlex="25%">
+                                                                    <div></div>
+                                                                       <div class="row card_title">
+                                                                       <div class="col-md-1 col-sm-1 col-1"><h5 style="font-size:20px;"></h5></div>
+                                                                       <h5 style="font-size:3.5vh;">Info</h5>
+                                                                       <div class="col-md-1 col-sm-1 col-1"><h5 style="font-size:20px;"></h5></div>
+                                                                       <div class="col-md-1 col-sm-1 col-1"><svg role="img" style="float:right;width:2.5vw;height:5vh;padding-top:0.5vh;margin-right:-12vh;margin-top:-1vh;" class="icon icon1"><use xlink:href="assets/icons/icons.svg#icon-bulb"></use></svg></div>
+                                                                       </div>
+                                                                       <div class="row">
+                                                                               <div class="col-12"><p class="text-center" style="padding-top:15px;font-size:40px;font-size:3.5vh">15</p></div>
+                                                                           </div>
+                                                                           </mat-card>
+                                                                           
+
+
+
+
+
+			</div>
+            <br><br>
+            
+            <div class="container" 
+    fxLayout
+    fxLayoutWrap
+     fxLayout.xs="column"
+     fxLayoutAlign="left"
+     fxLayoutGap="0"
+		 fxLayoutGap.xs="0">
+
+		 <mat-card class="example-card" fxFlex="100%" style="height:500px;" >
+             <app-bar></app-bar>
+
+         </mat-card>
+         </div>
+         <br>
+
+
+         <div class="container" 
+         fxLayout
+         fxLayoutWrap
+          fxLayout.xs="column"
+          fxLayoutAlign="left"
+          fxLayoutGap="1%"
+              fxLayoutGap.xs="0">
+     
+              <mat-card class="example-card" fxFlex="40%" style="height:400px;" >
+                  <app-radar></app-radar>
+     
+              </mat-card>
+              
+
+
+              <mat-card class="example-card" fxFlex="40%" style="height:400px;" >
+                <app-radar1></app-radar1>
+   
+            </mat-card>
+
+            <mat-card class="example-card" fxFlex="40%" style="height:400px;" >
+                <app-polar></app-polar>
+   
+            </mat-card>
+              
+
+            </div>
+            <br>
+
+
+
+                   
+
+         
+         
+
+    </mat-sidenav-container>
+    
+
